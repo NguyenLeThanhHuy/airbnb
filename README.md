@@ -34,7 +34,7 @@ npx create-next-app
 - @/
 
 #Setup .env file
-DATABASE_URL="mongodb+srv://minhle9163:JkLAfuzYruFaTW1s@airbnb.mxnxtbb.mongodb.net/test"
+DATABASE_URL= 
 NEXTAUTH_JWT_SECRET= "NEXT-JWT-SECRET"
 NEXTAUTH_SECRET = "NEXT-SECRET"
 GITHUB_ID=
@@ -42,4 +42,12 @@ GITHUB_SECRET=
 GOOGLE_CLIENT_ID = 
 GOOGLE_CLIENT_SECRET =
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+
+Setup Prisma
+npm i prisma
+npx prisma init
+npx prisma db push
+
+#Start the app
+npm run dev
  
